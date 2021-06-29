@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GET and POST Request</title>
 </head>
 <body>
-    {% if message %}
-    <h1> {{ message }} </h1>
-    {% else %}
-    <h1> "There is no message in here..."</h1> 
-    {% endif %}
+    <h1>How can we apply POST and GET request</h1>
+    <form action="/total" method="POST">
+        <h3><input type="number" name = "value1">Number1</h3><br> 
+        <h3><input type="number" name = "value2">Number2</h3>
+        <h3><input type="number" name = "value3">Number3</h3>
+        <button type="submit">Calculate Total</button>
+    </form>   
 </body>
 </html>
