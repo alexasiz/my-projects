@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  This template launces an EC2 that enables SSH 
+Resources:
+  MyEc2:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0ab4d1e9cf9a1215a      
+      InstanceType: t2.micro
+      KeyName: ec2.key1.pem 
+      SecurityGroups:
+        - mysec_grp1
+      Tags:
+        - Key: Name
+          Value: Asz-cf-stack-instance 
+
